@@ -12,3 +12,11 @@ const players = [
     { name: 'Buffon', position: 'goalkeeper' },
     { name: 'Casillas', position: 'goalkeeper' }
 ]
+
+var gk = "";
+for(let i=0, i<players.length, i++){
+    if(players[i].position == "goalkeeper"){
+        gk += `<option value = "${players[i].name}" > ${players[i].name} </option>`;
+    };
+};
+document.getElementById(pos1).innerHTML = gk;
